@@ -1,3 +1,4 @@
-languageCode = "en-us"
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+languageCode = "en-gb"
+title = "GWHN"
+baseurl = "http://gwhn.github.io/me"
+theme = "blank"
