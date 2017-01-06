@@ -19,7 +19,8 @@ I will use this site for:
 - articles
 
 I'm going to add an image to see where I can put associated content. I don't
-really want to put it in the static folder, so I'll start by creating an images
-subfolder and see if that works.
+really want to put it in the static folder. I discovered that you can create
+a folder with the same name as the markdown file and put images in there. You
+don't need to add a relative path either, just the filename.
 
 ![Aren't I pretty](me-portrait.jpg)
