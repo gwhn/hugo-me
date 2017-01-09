@@ -1,0 +1,29 @@
+{{ $baseURL := .Site.BaseURL }}
+
+<section id="main">
+  <h1 id="title">{{ .Title }}</h1>
+  <div>
+    <article id="content">
+      {{ .Content }}
+    </article>
+  </div>
+</section>
+
+<aside id="meta">
+  <div>
+    <section>
+      <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+      <h5 id="wc"> {{ .FuzzyWordCount }} Words </h5>
+    </section>
+    <ul id="categories">
+      {{ range .Params.categories }}
+        <li><a href="{{ $baseURL }}/categories/{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+    <ul id="tags">
+      {{ range .Params.tags }}
+        <li><a href="{{ $baseURL }}/tags/{{ . | urlize }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</aside>
